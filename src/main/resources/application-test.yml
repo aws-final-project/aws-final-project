@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        default_schema:
+  datasource:
+    url: "jdbc:h2:mem:testdb"
+    username: h2user
+    password: supersecretpassword
+    driver-class-name: org.h2.Driver
